@@ -1,0 +1,32 @@
+header {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: mediumseagreen;
+  width: 100%;
+  text-align: center;
+}
+
+photo {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+nav {
+  font-family: "Helvetica", sans-serif;
+  background-color: mediumseagreen;
+  text-transform: uppercase;
+  text-align: center;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+content {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  font-family: cursive;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 20% 20%;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "image header nav"
+                       "content content content";
