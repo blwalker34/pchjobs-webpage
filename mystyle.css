@@ -3,19 +3,19 @@ body {
   grid-template-columns: 1fr 1fr 3fr;
   position: relative;
   margin: auto;
-  grid-template-areas: "nav image header "
+  grid-template-areas: "nav photo header "
                        "content content content";
 }
 
 header {
-  grid-area: 1 / 3 / 2 / 4;
+  grid-area: header;
   background-color: mediumseagreen;
   width: 100%;
   text-align: center;
 }
 
 photo {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: photo;
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
   background-color: mediumseagreen;
   text-transform: uppercase;
   text-align: center;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: nav;
 }
 
 content {
